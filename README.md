@@ -55,7 +55,7 @@ Full reasoning for each of these lives in [`docs/Airbnb_Athens_Design_Decisions.
 
 ## Quarterly loading
 
-After the initial two-snapshot bootstrap, every new quarter runs through `Airbnb_Athens_quarterly_load.sql` — a 12-step script safe to re-run, with guards against re-loading an already-loaded snapshot, verification before and after each irreversible step, and a data-quality gate that catches what would otherwise be a raw primary-key-violation crash. Full step-by-step breakdown in [`docs/Airbnb_Athens_Design_Decisions.md`](docs/Airbnb_Athens_Design_Decisions.md).
+After the initial two-snapshot bootstrap, every new quarter runs through `Airbnb_Athens_quarterly_load.sql` — a 12-step script safe to re-run, with guards against re-loading an already-loaded snapshot, verification before and after each irreversible step, and a data-quality gate that catches what would otherwise be a raw primary-key-violation crash. Full step-by-step breakdown in [`docs/Airbnb_Athens_Design_Decisions.md`](https://github.com/arkampa/airbnb-athens-data-warehouse/blob/main/Airbnb_Athens_Design_Decisions.md).
 
 ---
 
